@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "Api1",
+    "name": "Heal_gear",
     "datasource": {
       "name": "Untitled datasource 1",
       "pluginId": "google-sheets-plugin",
@@ -21,7 +21,7 @@
       "selfReferencingDataPaths": [],
       "formData": {
         "command": {
-          "data": "INSERT_ONE"
+          "data": "FETCH_MANY"
         },
         "entityType": {
           "data": "ROWS"
@@ -41,15 +41,34 @@
         "range": {
           "data": ""
         },
+        "sheetName": {
+          "data": "Tank/Healer: SpS/Det"
+        },
+        "sheetUrl": {
+          "data": "https://docs.google.com/spreadsheets/d/1tZ95lLdwldQSl0ebm0On--utwSabvH5sBIfr_j4je84/edit"
+        },
         "smartSubstitution": {
           "data": true
         },
+        "sortBy": {
+          "data": [
+            {
+              "column": "",
+              "order": "Ascending"
+            }
+          ]
+        },
         "tableHeaderIndex": {
-          "data": "1"
+          "data": "2"
         },
         "where": {
           "data": {
-            "condition": "AND"
+            "condition": "AND",
+            "children": [
+              {
+                "condition": "LT"
+              }
+            ]
           }
         }
       }
@@ -63,9 +82,10 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-08-01T12:21:19Z"
   },
-  "id": "Page1_Api1",
+  "id": "Page1_Heal_gear",
   "deleted": false,
-  "gitSyncId": "64ba57a76eeb2c725efcc18a_64ba7630a4e9df15fc156e6a"
+  "gitSyncId": "64ba57a76eeb2c725efcc18a_64c8f8bfe7b8e74ccd45f886"
 }
